@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<style>
+* { box-sizing: border-box;}
+body {margin: 0;}
+.header {
+  background-color: aqua;
+  padding: 20px;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color:greenyellow;
+  color: black;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.side {
+    width: 30%;
+    background-color: palevioletred;
+}
+
+  
+.column.middle {
+  width: 40%;
+  background-color: palevioletred
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  background-color: aqua;
+  padding: 10px;
+  text-align: center;
+}
+h1{color: red;}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Eleventh assignment</h1>
+  <h2>This is a 11th assignment tells about website layout</h2>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Menu</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>HTML</h2>
+    <p>HTML is the standard markup language for Web pages.With HTML we can create our own 
+        Websites.HTML is easy to learn.HTML consists of a series of elements
+        HTML elements tell the browser how to display the content.</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>CSS</h2>
+<p> CSS stands for Cascading Style Sheets
+    CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+    CSS saves a lot of work. It can control the layout of multiple web pages all at once
+    External stylesheets are stored in CSS files</p>
+  </div>
+  
+  <div class="column side">
+    <h2>JAVA SCRIPT</h2>
+    <p>JavaScript is the world's most popular programming language.
+        JavaScript is the programming language of the Web. JavaScript is easy to learn.
+        JS is a platform independent.
+        </p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thank you....!</h2>
+</div>
+  
+</body>
+</html>
+
